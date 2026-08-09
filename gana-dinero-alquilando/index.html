@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gana Dinero Alquilando tus Cosas | Rentahop</title>
+  <meta name="description" content="Publica gratis lo que no usas (kayaks, herramientas, bicis, material de eventos...) y gana dinero alquilándolo entre particulares. Pago y depósito protegidos por Rentahop." />
+  <meta name="theme-color" content="#0c131b" />
+  <link rel="canonical" href="https://landings.rentahop.com/gana-dinero-alquilando" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Rentahop" />
+  <meta property="og:title" content="Gana Dinero Alquilando tus Cosas | Rentahop" />
+  <meta property="og:description" content="Publica gratis lo que no usas y gana dinero alquilándolo entre particulares. Pago y depósito protegidos por Rentahop." />
+  <meta property="og:url" content="https://landings.rentahop.com/gana-dinero-alquilando" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gana Dinero Alquilando tus Cosas | Rentahop" />
+  <meta name="twitter:description" content="Publica gratis lo que no usas y gana dinero alquilándolo entre particulares." />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="dist/output.css?v=1" />
+</head>
+<body class="bg-white text-ink">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="sticky top-0 z-50 border-b border-ink/10 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-2 lg:px-8">
+      <a href="https://www.rentahop.com" class="flex items-center">
+        <img src="assets/logo-square.png" alt="Rentahop" class="h-12 w-auto sm:h-14" />
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-ink-600 md:flex">
+        <a href="#por-que" class="hover:text-primary-700">Por qué publicar</a>
+        <a href="#como-funciona" class="hover:text-primary-700">Cómo funciona</a>
+        <a href="#seguridad" class="hover:text-primary-700">Seguridad</a>
+        <a href="#faq" class="hover:text-primary-700">Preguntas frecuentes</a>
+      </nav>
+      <a href="https://rentahop.mysharetribe.com/signup" class="btn-primary !px-5 !py-2 text-sm">
+        Publica gratis
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="relative overflow-hidden bg-sea-gradient text-white">
+      <svg class="pointer-events-none absolute inset-x-0 bottom-0 w-full text-ink" viewBox="0 0 1440 120" fill="none" aria-hidden="true">
+        <path d="M0 64c120 20 240 30 360 24s240-30 360-24 240 30 360 24 240-30 360-24v56H0Z" fill="currentColor" opacity="0.5"/>
+      </svg>
+
+      <div class="relative mx-auto grid max-w-7xl gap-12 px-5 pb-16 pt-8 lg:grid-cols-2 lg:items-start lg:px-8 lg:pb-24 lg:pt-12">
+        <div>
+          <p class="chip bg-white/10 text-primary-200 ring-1 ring-inset ring-primary/30">
+            Para propietarios particulares y empresas
+          </p>
+          <h1 class="mt-5 font-display text-3xl leading-tight text-white sm:text-4xl lg:text-5xl">
+            Gana Dinero Alquilando lo que ya Tienes
+          </h1>
+          <p class="mt-5 max-w-xl text-base text-white/80 sm:text-lg">
+            Kayaks, herramientas, bicis, material de eventos... lo que sea que tengas guardado sin usar puede
+            generarte ingresos extra cada mes. Publica tu anuncio gratis, tú decides el precio y la disponibilidad,
+            y Rentahop protege el pago y el depósito.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="https://rentahop.mysharetribe.com/signup" class="btn-primary h-12 justify-center">
+              Publica tu primer anuncio
+            </a>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/70">
+            <span>✓ Publicar es gratis</span>
+            <span>✓ Tú pones el precio</span>
+            <span>✓ Pago y depósito protegidos</span>
+            <span>✓ Inquilinos verificados (KYC)</span>
+          </div>
+        </div>
+
+        <div id="calculadora" class="rounded-2xl bg-white p-6 shadow-card sm:p-8">
+          <p class="chip bg-primary-50 text-primary-700">Calcúlalo tú mismo</p>
+          <h2 class="mt-4 text-lg font-semibold text-ink">¿Cuánto podrías ganar?</h2>
+          <p class="mt-2 text-sm text-ink-600">
+            Ajusta el precio por día y los días al mes que crees que podrías alquilarlo. Es sólo una estimación
+            orientativa, no una promesa de ingresos.
+          </p>
+
+          <div class="mt-6 grid gap-6 sm:grid-cols-2">
+            <div>
+              <label for="precio-dia" class="text-sm font-medium text-ink-600">Precio por día (€)</label>
+              <input id="precio-dia" type="range" min="5" max="150" value="25" class="mt-3 w-full accent-primary" />
+              <p class="mt-2 text-sm text-ink-500"><span id="precio-dia-valor">25</span> €/día</p>
+            </div>
+            <div>
+              <label for="dias-mes" class="text-sm font-medium text-ink-600">Días alquilado al mes</label>
+              <input id="dias-mes" type="range" min="1" max="20" value="6" class="mt-3 w-full accent-primary" />
+              <p class="mt-2 text-sm text-ink-500"><span id="dias-mes-valor">6</span> días/mes</p>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-xl bg-primary-50 p-6 text-center">
+            <p class="text-sm font-medium text-primary-700">Ingreso mensual estimado</p>
+            <p class="mt-1 font-display text-4xl text-ink"><span id="resultado-mes">150</span> €</p>
+            <p class="mt-1 text-sm text-primary-700">≈ <span id="resultado-anio">1.800</span> € al año</p>
+          </div>
+
+          <a href="https://rentahop.mysharetribe.com/signup" class="btn-primary mt-6 flex h-12 w-full items-center justify-center">
+            Empieza a publicar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POR QUÉ PUBLICAR ===================== -->
+    <section id="por-que" class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
+      <p class="chip bg-primary-50 text-primary-700">Por qué publicar en Rentahop</p>
+      <h2 class="mt-4 font-display text-2xl text-ink sm:text-3xl">Lo que ya tienes puede pagarse solo</h2>
+      <p class="mt-3 max-w-2xl text-ink-600">
+        La mayoría de los objetos que compramos se usan sólo unos días al año. El resto del tiempo, están
+        acumulando polvo en el trastero, el garaje o el balcón. Rentahop te ayuda a convertir ese tiempo muerto
+        en ingresos.
+      </p>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="card p-6">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-700">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-ink">Ingresos extra sin esfuerzo</h3>
+          <p class="mt-2 text-sm text-ink-600">Tú decides qué días está disponible y a qué precio. El resto del tiempo, sigue siendo tuyo para usarlo cuando quieras.</p>
+        </div>
+        <div class="card p-6">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-700">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V8a5 5 0 0 1 10 0v3"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-ink">Pago y depósito protegidos</h3>
+          <p class="mt-2 text-sm text-ink-600">Nada de cobrar en efectivo ni fiarte a ciegas. Rentahop gestiona el cobro y, si lo activas, también un depósito de garantía.</p>
+        </div>
+        <div class="card p-6">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-700">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 12c2.5 0 4.5-2 4.5-4.5S14.5 3 12 3 7.5 5 7.5 7.5 9.5 12 12 12Z"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-ink">Inquilinos verificados</h3>
+          <p class="mt-2 text-sm text-ink-600">Sólo pueden reservar usuarios con identidad verificada (KYC). Sabes con quién estás tratando antes de decir que sí.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CÓMO FUNCIONA ===================== -->
+    <section id="como-funciona" class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
+      <p class="chip bg-primary-50 text-primary-700">Cómo funciona</p>
+      <h2 class="mt-4 font-display text-2xl text-ink sm:text-3xl">Publicar te lleva 5 minutos</h2>
+
+      <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-white">1</div>
+          <h3 class="mt-4 font-semibold text-ink">Crea tu anuncio</h3>
+          <p class="mt-2 text-sm text-ink-600">Sube fotos, describe el estado del objeto y fija el precio por día.</p>
+        </div>
+        <div>
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-white">2</div>
+          <h3 class="mt-4 font-semibold text-ink">Marca tu disponibilidad</h3>
+          <p class="mt-2 text-sm text-ink-600">Elige qué días quieres tenerlo disponible en el calendario. El resto sigue siendo sólo tuyo.</p>
+        </div>
+        <div>
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-white">3</div>
+          <h3 class="mt-4 font-semibold text-ink">Acepta la reserva</h3>
+          <p class="mt-2 text-sm text-ink-600">Recibes una notificación cuando alguien reserva. Aceptas y, si hace falta, acordáis los detalles por el chat de Rentahop.</p>
+        </div>
+        <div>
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-white">4</div>
+          <h3 class="mt-4 font-semibold text-ink">Cobra de forma segura</h3>
+          <p class="mt-2 text-sm text-ink-600">El pago (y el depósito, si lo activaste) se gestiona a través de la plataforma. Sin efectivo, sin sorpresas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEGURIDAD / OBJECIONES ===================== -->
+    <section id="seguridad" class="bg-sea-gradient py-16 text-white lg:py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="chip bg-white/10 text-primary-200 ring-1 ring-inset ring-primary/30">Tus dudas, resueltas</p>
+        <h2 class="mt-4 font-display text-2xl text-white sm:text-3xl">Entendemos que dejar algo tuyo da respeto</h2>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2">
+          <div class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+            <h3 class="font-semibold text-white">¿Y si me lo rompen o no me lo devuelven?</h3>
+            <p class="mt-2 text-sm text-white/70">
+              Tú decides si pides un depósito de garantía al configurar el anuncio. Si el material vuelve en las
+              mismas condiciones, se libera automáticamente; si hay una incidencia, se retiene para cubrir el daño.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+            <h3 class="font-semibold text-white">¿Y si el inquilino no es de fiar?</h3>
+            <p class="mt-2 text-sm text-white/70">
+              Todos los usuarios pasan una verificación de identidad (KYC). No es posible completar una reserva si
+              alguna de las dos partes no está verificada.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+            <h3 class="font-semibold text-white">¿Y si no me pagan?</h3>
+            <p class="mt-2 text-sm text-white/70">
+              El pago no pasa por tus manos ni por las suyas: Rentahop lo gestiona a través de la plataforma antes
+              de que se confirme la reserva.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+            <h3 class="font-semibold text-white">¿Tengo que estar disponible todos los días?</h3>
+            <p class="mt-2 text-sm text-white/70">
+              No. Tú marcas el calendario con los días que quieres ofrecer. Si un fin de semana lo necesitas para ti,
+              simplemente no lo dejas disponible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARTICULARES VS EMPRESAS ===================== -->
+    <section class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div class="card p-8">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-700">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5M12 20c0-3 2.5-5 5-5s4 2 4 5"/></svg>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-ink">¿Eres particular?</h3>
+          <p class="mt-2 text-sm text-ink-600">
+            Esa tabla de paddle surf, la taladradora o la carpa que usaste una vez para una fiesta pueden generarte
+            un ingreso extra cada mes, sin más complicación que aceptar la reserva cuando te llegue.
+          </p>
+        </div>
+        <div class="card p-8">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-700">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="9" height="18" rx="1"/><path d="M13 21V8l7 4v9"/><path d="M7 7h1M7 11h1M7 15h1"/></svg>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-ink">¿Tienes un negocio?</h3>
+          <p class="mt-2 text-sm text-ink-600">
+            Clubs náuticos, tiendas de deporte o negocios de alquiler pueden usar Rentahop como canal adicional de
+            reservas online, con gestión de disponibilidad y cobros centralizada.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="bg-ink-800/[0.03] py-16 lg:py-24">
+      <div class="mx-auto max-w-3xl px-5 lg:px-8">
+        <p class="chip bg-primary-50 text-primary-700">Preguntas frecuentes</p>
+        <h2 class="mt-4 font-display text-2xl text-ink sm:text-3xl">Todo lo que necesitas saber antes de publicar</h2>
+
+        <div class="mt-8 space-y-3">
+          <details class="card group p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-ink">
+              ¿Cuánto cuesta publicar un anuncio?
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-primary-700 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600">
+              Publicar tu anuncio en Rentahop es gratis. Sólo se aplica una comisión sobre las reservas
+              efectivamente realizadas, nunca por tener el anuncio publicado.
+            </p>
+          </details>
+          <details class="card group p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-ink">
+              ¿Puedo elegir a quién le alquilo?
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-primary-700 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600">
+              Sí. Cada solicitud de reserva la aceptas tú manualmente. Puedes revisar el perfil verificado del
+              inquilino antes de confirmar.
+            </p>
+          </details>
+          <details class="card group p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-ink">
+              ¿Tengo que entregar el material en persona?
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-primary-700 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600">
+              La entrega la acordáis directamente tú y el inquilino a través del chat de Rentahop: día, hora y
+              punto de encuentro que os venga bien a los dos.
+            </p>
+          </details>
+          <details class="card group p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-ink">
+              ¿Qué pasa si quiero dejar de publicar?
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-primary-700 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600">
+              Puedes pausar o eliminar tu anuncio cuando quieras desde tu panel, sin compromiso ni permanencia.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="mx-auto max-w-4xl px-5 py-16 text-center lg:px-8 lg:py-24">
+      <h2 class="font-display text-2xl text-ink sm:text-3xl">¿Tienes algo que no usas todos los días?</h2>
+      <p class="mt-3 text-ink-600">Publícalo gratis en Rentahop y empieza a ganar dinero con ello esta misma semana.</p>
+      <a href="https://rentahop.mysharetribe.com/signup" class="btn-primary mt-8 inline-flex h-12 items-center justify-center px-8">
+        Publica tu primer anuncio
+      </a>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-ink/10 bg-white text-ink-600">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div>
+        <a href="/" class="inline-flex items-center">
+          <img src="assets/logo-horizontal.jpg" alt="Rentahop" class="h-28 w-auto sm:h-32" />
+        </a>
+        <p class="mt-3 text-sm">
+          Marketplace de alquiler entre particulares y empresas: náutica, deporte, hogar y mucho más.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-ink">Para propietarios</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="#por-que" class="hover:text-primary-700">Por qué publicar</a></li>
+          <li><a href="#como-funciona" class="hover:text-primary-700">Cómo funciona</a></li>
+          <li><a href="#seguridad" class="hover:text-primary-700">Seguridad y protección</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-ink">Rentahop</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="https://www.rentahop.com" class="hover:text-primary-700">Ir a Rentahop</a></li>
+          <li><a href="https://landings.rentahop.com/alquiler-nautico" class="hover:text-primary-700">Alquiler náutico</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-ink">Descarga la app</h4>
+        <div class="mt-3 flex flex-col gap-2">
+          <a href="https://apps.apple.com/es/app/rentahop/id6758559347" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-ink/10 px-5 py-3 text-sm text-ink-500 transition hover:border-ink/20 hover:text-ink">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 2c.1 1.1-.3 2.2-1 3-.7.8-1.9 1.5-3 1.4-.1-1.1.4-2.2 1-3 .8-.8 2-1.4 3-1.4Zm3.6 16.6c-.5 1.2-.8 1.7-1.5 2.8-1 1.5-2.3 3.4-4 3.4-1.5 0-1.9-1-3.9-1s-2.5 1-4 1c-1.7 0-3-1.7-4-3.2C.6 16.8 0 12 1.9 9.1c1-1.5 2.6-2.4 4.1-2.4 1.6 0 2.6 1 3.9 1 1.3 0 2.1-1 4-1 1.3 0 2.7.7 3.7 1.9-3.3 1.8-2.8 6.6.5 8Z"/></svg>
+            App Store
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.rentahop.app&hl=es" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-ink/10 px-5 py-3 text-sm text-ink-500 transition hover:border-ink/20 hover:text-ink">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.6 13.9 12 3.6 21.4c-.4-.3-.6-.7-.6-1.2V3.8c0-.5.2-.9.6-1.2Zm11.4 10.3 2.7 2.7-9.3 5.3 6.6-8ZM17.7 9l2.7 1.6c.7.4.7 1.4 0 1.8L17.7 14l-2.9-3 2.9-2Zm-3-3.9-6.6-8 9.3 5.3-2.7 2.7Z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const precioInput = document.getElementById('precio-dia');
+    const diasInput = document.getElementById('dias-mes');
+    const precioValor = document.getElementById('precio-dia-valor');
+    const diasValor = document.getElementById('dias-mes-valor');
+    const resultadoMes = document.getElementById('resultado-mes');
+    const resultadoAnio = document.getElementById('resultado-anio');
+
+    function actualizarCalculadora() {
+      const precio = parseInt(precioInput.value, 10);
+      const dias = parseInt(diasInput.value, 10);
+      const mes = precio * dias;
+      const anio = mes * 12;
+      precioValor.textContent = precio;
+      diasValor.textContent = dias;
+      resultadoMes.textContent = mes.toLocaleString('es-ES');
+      resultadoAnio.textContent = anio.toLocaleString('es-ES');
+    }
+
+    precioInput.addEventListener('input', actualizarCalculadora);
+    diasInput.addEventListener('input', actualizarCalculadora);
+    actualizarCalculadora();
+  </script>
+</body>
+</html>
