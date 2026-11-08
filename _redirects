@@ -4,6 +4,11 @@
 /alquiler-mallorca                https://www.rentahop.com/alquiler            301
 /gana-dinero-alquilando           https://www.rentahop.com/publicar            301
 /alquiler-aire-libre-mallorca     https://www.rentahop.com/alquiler?g=deporte  301
+/alquiler-nautico/                https://www.rentahop.com/alquiler?g=nautica  301
+/alquiler-dj-ibiza/               https://www.rentahop.com/alquiler/pack-dj/   301
+/alquiler-mallorca/               https://www.rentahop.com/alquiler            301
+/gana-dinero-alquilando/          https://www.rentahop.com/publicar            301
+/alquiler-aire-libre-mallorca/    https://www.rentahop.com/alquiler?g=deporte  301
 /alquiler-nautico/*               https://www.rentahop.com/alquiler?g=nautica  301
 /alquiler-dj-ibiza/*              https://www.rentahop.com/alquiler/pack-dj/   301
 /alquiler-mallorca/*              https://www.rentahop.com/alquiler            301
