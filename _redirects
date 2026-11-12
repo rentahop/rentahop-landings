@@ -1,17 +1,19 @@
 # Las landings antiguas (agosto 2026) ahora están en la web nueva: redirección permanente (301).
-/alquiler-nautico                 https://www.rentahop.com/alquiler?g=nautica  301
-/alquiler-dj-ibiza                https://www.rentahop.com/alquiler/pack-dj/   301
-/alquiler-mallorca                https://www.rentahop.com/alquiler            301
-/gana-dinero-alquilando           https://www.rentahop.com/publicar            301
-/alquiler-aire-libre-mallorca     https://www.rentahop.com/alquiler?g=deporte  301
-/alquiler-nautico/                https://www.rentahop.com/alquiler?g=nautica  301
-/alquiler-dj-ibiza/               https://www.rentahop.com/alquiler/pack-dj/   301
-/alquiler-mallorca/               https://www.rentahop.com/alquiler            301
-/gana-dinero-alquilando/          https://www.rentahop.com/publicar            301
-/alquiler-aire-libre-mallorca/    https://www.rentahop.com/alquiler?g=deporte  301
-/alquiler-nautico/*               https://www.rentahop.com/alquiler?g=nautica  301
-/alquiler-dj-ibiza/*              https://www.rentahop.com/alquiler/pack-dj/   301
-/alquiler-mallorca/*              https://www.rentahop.com/alquiler            301
-/gana-dinero-alquilando/*         https://www.rentahop.com/publicar            301
-/alquiler-aire-libre-mallorca/*   https://www.rentahop.com/alquiler?g=deporte  301
-/*                                https://www.rentahop.com/                    301
+# 11 nov 2026: cada una va a una página que Google indexa, en un solo salto (sin «/» final ni páginas noindex
+# como /alquiler o /alquiler?g=…).
+/alquiler-nautico                 https://www.rentahop.com/guias/alquiler-nautico-mallorca  301
+/alquiler-dj-ibiza                https://www.rentahop.com/alquiler/pack-dj                 301
+/alquiler-mallorca                https://www.rentahop.com/                                 301
+/gana-dinero-alquilando           https://www.rentahop.com/publicar                         301
+/alquiler-aire-libre-mallorca     https://www.rentahop.com/guias/alquiler-nautico-mallorca  301
+/alquiler-nautico/                https://www.rentahop.com/guias/alquiler-nautico-mallorca  301
+/alquiler-dj-ibiza/               https://www.rentahop.com/alquiler/pack-dj                 301
+/alquiler-mallorca/               https://www.rentahop.com/                                 301
+/gana-dinero-alquilando/          https://www.rentahop.com/publicar                         301
+/alquiler-aire-libre-mallorca/    https://www.rentahop.com/guias/alquiler-nautico-mallorca  301
+/alquiler-nautico/*               https://www.rentahop.com/guias/alquiler-nautico-mallorca  301
+/alquiler-dj-ibiza/*              https://www.rentahop.com/alquiler/pack-dj                 301
+/alquiler-mallorca/*              https://www.rentahop.com/                                 301
+/gana-dinero-alquilando/*         https://www.rentahop.com/publicar                         301
+/alquiler-aire-libre-mallorca/*   https://www.rentahop.com/guias/alquiler-nautico-mallorca  301
+/*                                https://www.rentahop.com/                                 301
